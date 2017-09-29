@@ -74,6 +74,9 @@ public class InfoPessoais {
 	}
 
 
+	
+	
+	
 	public void setRestoDaInfoPessoais(ArrayList<RestoDaInfoPessoais> restoDaInfoPessoais) {
 		this.restoDaInfoPessoais = restoDaInfoPessoais;
 	}

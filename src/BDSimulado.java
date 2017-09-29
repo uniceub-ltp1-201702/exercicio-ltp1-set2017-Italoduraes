@@ -33,13 +33,49 @@ public class BDSimulado {
 		
 		RestoDaInfoPessoais r1 = new RestoDaInfoPessoais("email", "maria@maria.com");
 		RestoDaInfoPessoais r2 = new RestoDaInfoPessoais("fixo", "55667878898");
-		
-		
-		
+        RestoDaInfoPessoais r3 = new RestoDaInfoPessoais("celular", "32569874");
+		RestoDaInfoPessoais r4 = new RestoDaInfoPessoais("celular", "85411236");
+		RestoDaInfoPessoais r5 = new RestoDaInfoPessoais("email", "Mateusjj@gmail.com");
+		RestoDaInfoPessoais r6 = new RestoDaInfoPessoais("email", "Mateus09@hotmail.com");
+		RestoDaInfoPessoais r7 = new RestoDaInfoPessoais("fixo", "15698524");
+		RestoDaInfoPessoais r8 = new RestoDaInfoPessoais("celular", "15695844");
+		RestoDaInfoPessoais r9 = new RestoDaInfoPessoais("celular", "52456985");
+		RestoDaInfoPessoais r10 = new RestoDaInfoPessoais("email", "Amandayhg@gmail.com");
+		RestoDaInfoPessoais r11= new RestoDaInfoPessoais("celular", "25659555");
+		RestoDaInfoPessoais r12= new RestoDaInfoPessoais("celular", "23655656");
+		RestoDaInfoPessoais r13= new RestoDaInfoPessoais("email", "italolevels@hotmail.com");
+		RestoDaInfoPessoais r14= new RestoDaInfoPessoais("celular", "84552698");
+		RestoDaInfoPessoais r15= new RestoDaInfoPessoais("fixo", "254789336");
+		RestoDaInfoPessoais r16= new RestoDaInfoPessoais("celular", "85269354");
+		RestoDaInfoPessoais r17= new RestoDaInfoPessoais("celular", "45112254");
+		RestoDaInfoPessoais r18= new RestoDaInfoPessoais("fixo", "852145698");
+		RestoDaInfoPessoais r19= new RestoDaInfoPessoais("email", "brunocastro@hotmail.com");
+		RestoDaInfoPessoais r20= new RestoDaInfoPessoais("fixo", "54876321");
+		RestoDaInfoPessoais r21 = new RestoDaInfoPessoais("email", "Lucassales@gmail.com");
 		
 		
 		I1.addRestoInfoPessoais(r1);
 		I1.addRestoInfoPessoais(r2);
+		I1.addRestoInfoPessoais(r3);
+		I1.addRestoInfoPessoais(r4);
+		I2.addRestoInfoPessoais(r5);
+		I2.addRestoInfoPessoais(r6);
+		I2.addRestoInfoPessoais(r7);
+		I2.addRestoInfoPessoais(r8);
+		I2.addRestoInfoPessoais(r9);
+		I3.addRestoInfoPessoais(r10);
+		I3.addRestoInfoPessoais(r11);
+		I4.addRestoInfoPessoais(r12);
+		I6.addRestoInfoPessoais(r13);
+		I6.addRestoInfoPessoais(r14);
+		I7.addRestoInfoPessoais(r15);
+		I7.addRestoInfoPessoais(r16);
+		I7.addRestoInfoPessoais(r17);
+		I8.addRestoInfoPessoais(r18);
+		I9.addRestoInfoPessoais(r19);
+		I9.addRestoInfoPessoais(r20);
+		I10.addRestoInfoPessoais(r21);
+		
 		
 		// Add
 				this.infoPessoais.add(I1);
@@ -53,6 +89,27 @@ public class BDSimulado {
 				this.infoPessoais.add(I9);
 				this.infoPessoais.add(I10);
 		
+				
+		// ADD empresas 
+				
+			Empresa e1= new Empresa("Corporação do mal", "1254874984.4848", "Rio de Janeiro", "RJ");
+			Empresa e2= new Empresa("Jujú", "55454585844.4554", "Brasilia", "DF");
+			Empresa e3= new Empresa("Banco do Brasil", "5465454544.6546", "São Paulo", "SP");	
+				
+			
+			
+			
+			
+			
+			this.empresa.add(e1);
+			this.empresa.add(e2);
+			this.empresa.add(e3);
+				
+				
+				
+				
+				
+				
 	}
 
 	public ArrayList<InfoPessoais> getInfoPessoais() {

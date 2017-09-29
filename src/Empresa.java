@@ -44,7 +44,9 @@ public class Empresa {
 	}
 	
 	
-	
+	public void addempresa(){
+		
+	}
 	
 	
 	

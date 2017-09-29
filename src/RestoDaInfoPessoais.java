@@ -2,7 +2,7 @@
 public class RestoDaInfoPessoais {
 	
 	
-	private String tipo;
+	private String tipo;  // 1 - tel fixo, 2 - celular, 3 - email
 	private String valor;
 	
 	
