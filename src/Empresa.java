@@ -16,6 +16,11 @@ public class Empresa {
 		UF = uF;
 	}
 
+	//metodo to String 
+	@Override
+	public String toString() {
+		return " [Nome da empresa =" + nome + ", CNPJ=" + CNPJ + ", cidade=" + cidade + ", UF=" + UF + "]";
+	}
 	
 	//metodo get e set
 	public String getNome() {
@@ -47,6 +52,9 @@ public class Empresa {
 	public void addempresa(){
 		
 	}
+
+
+	
 	
 	
 	

@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+
 public class BDSimulado {
 	
 	//Atributos
@@ -17,19 +18,35 @@ public class BDSimulado {
 	
 		
 		
+		// Criando  empresas 
+		
+		Empresa e1= new Empresa("Corporação do mal", "1254874984.4848", "Rio de Janeiro", "RJ");
+		Empresa e2= new Empresa("Jujú", "55454585844.4554", "Brasilia", "DF");
+		Empresa e3= new Empresa("Banco do Brasil", "5465454544.6546", "São Paulo", "SP");	
+		
+		
+		//Add empresas	
+		
+		this.empresa.add(e1);
+		this.empresa.add(e2);
+		this.empresa.add(e3);				
+		
 		//Criando informações Pessoais
 		// LocalDate.of(Ano , Mês , Dia);
 		
-		InfoPessoais I1= new InfoPessoais("Maria Joaquina", LocalDate.of(1996, 3, 24), "Feminino", "Brasilia", "DF");
-		InfoPessoais I2= new InfoPessoais("Mateus José", LocalDate.of(1985, 8, 30), "Masculino", "Rio de Janeiro", "RJ");
-		InfoPessoais I3= new InfoPessoais("Amanda Silva", LocalDate.of(1986, 5, 11), "Feminino", "São Paulo", "SP");
-		InfoPessoais I4= new InfoPessoais("Joaquin Da Silva", LocalDate.of(1990, 11, 15), "Masculino", "Amazonas",  "AM");
-		InfoPessoais I5= new InfoPessoais("Zezé da mamãe",LocalDate.of(1975, 12, 21), "Masculino", "São Paulo", "SP");
-		InfoPessoais I6= new InfoPessoais("Italo Durães", LocalDate.of(1950, 7, 12), "Masculino", "São Paulo", "SP");
-		InfoPessoais I7= new InfoPessoais("Jordy Da Silva", LocalDate.of(2000, 3, 5), "Masculino", "Amazonas",  "AM");
-		InfoPessoais I8= new InfoPessoais("Karine Alvará", LocalDate.of(1994, 3, 1), "Feminino", "Rio de Janeiro",  "RJ");
-		InfoPessoais I9= new InfoPessoais("Bruno Castro", LocalDate.of(1955, 2, 18), "Masculino", "Brasilia", "DF");
-		InfoPessoais I10= new InfoPessoais("Lucas Darboza", LocalDate.of(1999, 1, 19), "Masculino", "Rio de Janeiro", "DF");
+		InfoPessoais I1= new InfoPessoais("Maria Joaquina", LocalDate.of(1996, 3, 24), "Feminino", "Brasilia", "DF", e1 );
+		InfoPessoais I2= new InfoPessoais("Mateus José", LocalDate.of(1985, 8, 30), "Masculino", "Rio de Janeiro", "RJ", e1);
+		InfoPessoais I3= new InfoPessoais("Amanda Silva", LocalDate.of(1986, 5, 11), "Feminino", "São Paulo", "SP", e2);
+		InfoPessoais I4= new InfoPessoais("Joaquin Da Silva", LocalDate.of(1990, 11, 15), "Masculino", "Amazonas",  "AM", e3);
+		InfoPessoais I5= new InfoPessoais("Zezé da mamãe",LocalDate.of(1975, 12, 21), "Masculino", "São Paulo", "SP", e1);
+		InfoPessoais I6= new InfoPessoais("Italo Durães", LocalDate.of(1950, 7, 12), "Masculino", "São Paulo", "SP", e2);
+		InfoPessoais I7= new InfoPessoais("Jordy Da Silva", LocalDate.of(2000, 3, 5), "Masculino", "Amazonas",  "AM", null);
+		InfoPessoais I8= new InfoPessoais("Karine Alvará", LocalDate.of(1994, 3, 1), "Feminino", "Rio de Janeiro",  "RJ", e3);
+		InfoPessoais I9= new InfoPessoais("Bruno Castro", LocalDate.of(1955, 2, 18), "Masculino", "Brasilia", "DF", e2);
+		InfoPessoais I10= new InfoPessoais("Lucas Darboza", LocalDate.of(1999, 1, 19), "Masculino", "Rio de Janeiro", "DF",e3);
+		
+		
+		// Add os contatos
 		
 		RestoDaInfoPessoais r1 = new RestoDaInfoPessoais("email", "maria@maria.com");
 		RestoDaInfoPessoais r2 = new RestoDaInfoPessoais("fixo", "55667878898");
@@ -53,7 +70,7 @@ public class BDSimulado {
 		RestoDaInfoPessoais r20= new RestoDaInfoPessoais("fixo", "54876321");
 		RestoDaInfoPessoais r21 = new RestoDaInfoPessoais("email", "Lucassales@gmail.com");
 		
-		
+		// lingando as pessoas com seus contatos 
 		I1.addRestoInfoPessoais(r1);
 		I1.addRestoInfoPessoais(r2);
 		I1.addRestoInfoPessoais(r3);
@@ -77,7 +94,8 @@ public class BDSimulado {
 		I10.addRestoInfoPessoais(r21);
 		
 		
-		// Add
+		// Add informações pessoais
+		
 				this.infoPessoais.add(I1);
 				this.infoPessoais.add(I2);
 				this.infoPessoais.add(I3);
@@ -90,26 +108,8 @@ public class BDSimulado {
 				this.infoPessoais.add(I10);
 		
 				
-		// ADD empresas 
-				
-			Empresa e1= new Empresa("Corporação do mal", "1254874984.4848", "Rio de Janeiro", "RJ");
-			Empresa e2= new Empresa("Jujú", "55454585844.4554", "Brasilia", "DF");
-			Empresa e3= new Empresa("Banco do Brasil", "5465454544.6546", "São Paulo", "SP");	
-				
-			
-			
-			
-			
-			
-			this.empresa.add(e1);
-			this.empresa.add(e2);
-			this.empresa.add(e3);
-				
-				
-				
-				
-				
-				
+	
+	
 	}
 
 	public ArrayList<InfoPessoais> getInfoPessoais() {
@@ -129,12 +129,98 @@ public class BDSimulado {
 	
 	
 	
+	// QUESTÃO 3
 	
+     public ArrayList<InfoPessoais> getDadosGeral (){
+    	 
+    	 ArrayList<InfoPessoais> resultado = new ArrayList<InfoPessoais>();
+    	 
+    	 for (int i = 0; i <this.infoPessoais.size(); i++) {
+			resultado.add(this.infoPessoais.get(i));
+		}
+    	 
+    	 
+    	 return resultado;
+     }
+	
+    // QUESTÃO 4) retorne todos os contatos de uma determinada uf
  
- 
- 
+        public ArrayList<InfoPessoais> getBuscarUF (String UF){
+        	
+        	ArrayList<InfoPessoais> resultado = new ArrayList<InfoPessoais>();
+        	
+        	for (int i = 0; i <this.infoPessoais.size(); i++) {
+				if (this.infoPessoais.get(i).getUF().equals(UF)) {
+					resultado.add(this.infoPessoais.get(i));
+				}
+			}        	
+        	return resultado;
+        }
 		
 		
+     // QUESTÃO 5)   contatos que comece com nomes “A”
+         
+        public ArrayList<InfoPessoais> getBuscarPorLetra (String letra) {
+
+    		ArrayList<InfoPessoais> resultado = new ArrayList<InfoPessoais>();
+    		
+    		for (int i = 0; i < this.infoPessoais.size(); i++) {
+    			if (this.infoPessoais.get(i).getNome().substring(0, 1).equals(letra)) {
+    				resultado.add(this.infoPessoais.get(i));
+    			}
+    		}
+
+    		return resultado;
+    	}
+        
+        
+        //  QUESTÃO 6 retorne  contatos de uma determinada empresa e que seja sexo "Femino"
+    
+        public ArrayList<InfoPessoais> getEmprasaSoFeminino (String empresa) {
+
+    		String Sexo = "Feminino";
+    		
+    		ArrayList<InfoPessoais> resultado = new ArrayList<InfoPessoais>();
+    		
+    		for (int i = 0; i < this.infoPessoais.size(); i++) {
+    			if (this.infoPessoais.get(i).getSexo().equals(Sexo) && this.infoPessoais.get(i).getEmpresa().getNome().equals(empresa)) {
+    				resultado.add(this.infoPessoais.get(i));
+    			}
+    		}
+    		return resultado;
+    	}
+        
+        
+        // QUESTÃO 7 retorne uma lista com os contatos que estão cadastrados na empresa
+            
+        public ArrayList<Empresa> getFuncionariosDaEmpresa() {
+
+    		ArrayList<Empresa> resultado = new ArrayList<Empresa>();
+    		
+    		for (int i = 0; i < this.empresa.size(); i++) {
+    			resultado.add(this.empresa.get(i));
+    		}
+    		return resultado;
+    	}
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
 
 }

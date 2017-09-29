@@ -8,15 +8,73 @@ public class Principal {
 		// Instanciar o BDSimulado
 		
 				BDSimulado bds= new BDSimulado();
+							
 				
-				//Instanciar a lista de filmes e usuarios
-				ArrayList<InfoPessoais> infoPessoais = bds.getInfoPessoais();
-				ArrayList<Empresa> empresa = bds.getEmpresa();	
-				ArrayList<RestoDaInfoPessoais> restoDaInfoPessoais = bds.getRestoDaInfoPessoais();
+			//   QUESTÃO 3
+				
+			System.out.println("------------QUESTÃO 3 ----------\n");	
+				
+				ArrayList<InfoPessoais> infoPessoais = bds.getDadosGeral();
+				
+				for (int i = 0; i < infoPessoais.size(); i++) {
+					System.out.println(infoPessoais.get(i).toString());
+				}
 				
 				
+		//  QUESTÃO 4
 				
+		System.out.println("----------QUESTÃO 4-----------\n");
 				
+			ArrayList<InfoPessoais> BuscarUF = bds.getBuscarUF("SP");
+			
+			for (int i = 0; i <BuscarUF.size(); i++) {
+				System.out.println(BuscarUF.get(i));
+			}
+				
+			
+			
+		// QUESTÃO 5
+			
+			System.out.println("----------QUESTÃO 5-----------\n");
+			
+			ArrayList<InfoPessoais> BuscarPorletra = bds.getBuscarPorLetra("J");
+
+			for (int i = 0; i < BuscarPorletra.size(); i++) {
+				System.out.println(BuscarPorletra.get(i));
+
+			}
+			
+			
+		//  QUESTÃO 6
+			
+			System.out.println("---------------- Questão 6 ----------------");
+			
+			ArrayList<InfoPessoais> EmprasaSoFeminino = bds.getEmprasaSoFeminino("Banco do Brasil");
+				
+			for (int i = 0; i <EmprasaSoFeminino.size(); i++) {
+				System.out.println(EmprasaSoFeminino.get(i));
+			}
+			
+			
+		//   QUESTÃO 7
+
+			System.out.println("---------------- Questão 7 ----------------");
+			
+			ArrayList<Empresa> QtdPessoaEmpresa = bds.getFuncionariosDaEmpresa();
+		
+			for (int i = 0; i < QtdPessoaEmpresa.size(); i++) {
+				System.out.println(QtdPessoaEmpresa.get(i).getNome());
+						
+
+			}
+			
+			
+			
+			
+			
+			
+			
+			
 	}
 
 }
