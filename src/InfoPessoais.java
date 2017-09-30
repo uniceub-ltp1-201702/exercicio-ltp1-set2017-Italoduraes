@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -93,30 +94,7 @@ public class InfoPessoais {
 	
 
 	public void addRestoInfoPessoais(RestoDaInfoPessoais mamae) {
-	/*	// Classe para buscar usuário pelo nome
-		public Contato getContatoPorNome(String nome) {
-
-			Contato resultado = null;
-			for (int i = 0; i < this.infoPessoais.size(); i++) {
-				if (this.infoPessoais.get(i).getNome().equals(nome)) {
-					resultado = this.infoPessoais.get(i);
-				}
-			}
-			return resultado;
-		}
-
-		// Questão 2: Adicionar valorers de conexao aos contatos aos contatos
-		public void addConexaoContato(String nomeContato, String tipo, String valor) {
-
-			// Declarar um objeto de contato
-			RestoDaInfoPessoais restoDaInfoPessoais = new RestoDaInfoPessoais(getContatoPorNome(nomeContato), tipo, valor);
-			// Percorrer a lista de filmes
-			for (int i = 0; i < this.infoPessoais.size(); i++) {
-				if (this.infoPessoais.get(i).getNome().equals(nomeContato)) {
-					this.infoPessoais.get(i).get A RestoDaInfoPessoaiss().add(RestoDaInfoPessoais);
-				}
-			}
-		}*/
+	
 	}
 	
 

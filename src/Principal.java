@@ -12,7 +12,7 @@ public class Principal {
 				
 			//   QUESTÃO 3
 				
-			System.out.println("------------QUESTÃO 3 ----------\n");	
+			
 				
 				ArrayList<InfoPessoais> infoPessoais = bds.getDadosGeral();
 				
@@ -23,7 +23,7 @@ public class Principal {
 				
 		//  QUESTÃO 4
 				
-		System.out.println("----------QUESTÃO 4-----------\n");
+	
 				
 			ArrayList<InfoPessoais> BuscarUF = bds.getBuscarUF("SP");
 			
@@ -35,7 +35,6 @@ public class Principal {
 			
 		// QUESTÃO 5
 			
-			System.out.println("----------QUESTÃO 5-----------\n");
 			
 			ArrayList<InfoPessoais> BuscarPorletra = bds.getBuscarPorLetra("J");
 
@@ -47,7 +46,7 @@ public class Principal {
 			
 		//  QUESTÃO 6
 			
-			System.out.println("---------------- Questão 6 ----------------");
+		
 			
 			ArrayList<InfoPessoais> EmprasaSoFeminino = bds.getEmprasaSoFeminino("Banco do Brasil");
 				
@@ -58,8 +57,7 @@ public class Principal {
 			
 		//   QUESTÃO 7
 
-			System.out.println("---------------- Questão 7 ----------------");
-			
+		
 			ArrayList<Empresa> QtdPessoaEmpresa = bds.getFuncionariosDaEmpresa();
 		
 			for (int i = 0; i < QtdPessoaEmpresa.size(); i++) {

@@ -15,7 +15,7 @@ public class BDSimulado {
 		//Instanciando as listas
 		this.infoPessoais = new ArrayList<InfoPessoais>();
 		this.empresa = new ArrayList<Empresa>();
-	
+	    this.restoDaInfoPessoais = new ArrayList<RestoDaInfoPessoais>();
 		
 		
 		// Criando  empresas 
